@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS input</title>
+</head>
+<body>
+    <label>firstnumber</label><input type="text" id="first" >
+    <br>
+    <br>
+    <label>secondnumber</label><input type="text" id="second">
+    <br>
+    <br>
+    <button onclick="addition()">ADD</button>
+    <button onclick="subtraction()">SUB</button>
+    <button onclick="multliplication()">MUL</button>
+    
+    <label>result</label><input type="text" id="result">
+
+
+     <!-- displayin as a paragraph and the commented part in func addition is displaying in paragraph -->
+     <!-- <p id="para"></p> -->
+
+
+    <script>
+        function addition()
+        {
+            var a =document.getElementById('first').value;
+            var b =document.getElementById('second').value;
+            a=parseInt(a);
+            b=parseInt(b);
+            var c =a+b;
+            document.getElementById('result').value=c; 
+            // document.getElementById('para').innerHTML=c;
+        }
+
+        function subtraction()
+        {
+            var a =document.getElementById('first').value;
+            var b =document.getElementById('second').value;
+            a=parseInt(a);
+            b=parseInt(b);
+            var c =a-b;
+            document.getElementById('result').value=c; 
+        }
+
+        function multliplication()
+        {
+            var a =document.getElementById('first').value;
+            var b =document.getElementById('second').value;
+            a=parseInt(a);
+            b=parseInt(b);
+            var c =a*b;
+            document.getElementById('result').value=c; 
+        }
+    </script>
+</body>
+</html>
