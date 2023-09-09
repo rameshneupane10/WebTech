@@ -1,0 +1,27 @@
+input
+{
+    font-size: xx-large;
+    height: 100px;
+    width: 300px;
+    background-color: darkgray;
+}
+button
+{
+    width: 48px;
+            height: 48px;
+            font-size: 18px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: chartreuse;
+            border-radius: 50%;
+}
+button1
+{
+            width: 98px;
+            height: 48px;
+            font-size: 18px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: chartreuse;
+            border-radius: 50%;
+}
