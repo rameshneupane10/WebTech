@@ -5,4 +5,8 @@ function display(value)
 function clearDisplay() {
     document.getElementById('result').value = '';
 }
+function calculate()
+{
+    var a =getElementById('result').value +=value;
+}
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 greatest number</title>
+</head>
+<body>
+    <h1>GREATEST NUMBER AMONG THREE NUMBERS</h1>
+    <label>FirstNumber </label><input type="text" id="first">
+    <br>
+    <br>
+    <label>SecondNumber </label><input type="text" id="second">
+    <br>
+    <br>
+    <label>ThirdNumber </label><input type="text" id="third">
+    <br>
+    <br>
+    <button onclick="find()" >Enter</button>
+    <br><br>
+    <label> RESULT</label><input type="text" name="" id="result" readonly>
+
+    <script>
+        function find()
+        {
+            var a =document.getElementById('first').value;
+            a=parseInt(a);
+            var b =document.getElementById('second').value;
+            b=parseInt(b);
+            var c =document.getElementById('third').value;
+            c=parseInt(c);
+            if(a>b && a>c)
+            {
+                document.getElementById('result').value=a; 
+            }
+             else if(b>a && b>c)
+            {
+                document.getElementById('result').value=b; 
+            }
+            else
+            {
+                document.getElementById('result').value=c; 
+            }
+            
+            
+        }
+      
+    </script>
+</body>
+</html>
