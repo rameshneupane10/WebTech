@@ -1,0 +1,26 @@
+#Scissor
+{
+    border-radius: 30%;
+    padding: 50px;
+    font-size: larger;
+
+}
+#Paper
+  {
+    border-radius: 30%;
+    padding: 50px;
+    font-size: larger;
+    
+    }
+#Rock
+{
+    border-radius: 30%;
+    padding: 50px;
+    font-size: larger;
+}
+p{
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+    text-decoration: underline;
+}
