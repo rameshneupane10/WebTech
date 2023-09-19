@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number winner</title>
+</head>
+<body>
+        <label>Number 1:-</label><input type="text"  id="box1" readonly>
+        <input type="button" value="player1" id="butn2" onclick="player1()">
+
+        
+        
+        <br>
+        <br>
+        <label>Number 2:-</label><input type="text"  id="box2" readonly>
+        <input type="button" value="player2" id="butn2" onclick="player2()"> 
+
+        <p id="result"></p>
+
+
+<script>
+        function player1()
+        {
+            var a=  Math.random()*1000;
+            a=parseInt(a);
+            document.getElementById("box1").value=a;
+            display();
+        }
+
+        function player2()
+        {
+            var b= Math.random()*1000;
+            b=parseInt(b);
+            document.getElementById("box2").value=b;
+           display();
+        }
+        function display()
+        {
+            
+            var a =document.getElementById("box1").value;
+            var b =document.getElementById("box2").value;
+            if(a!="" && b!==""){
+            if(a>b)
+            {
+                document.getElementById("result").innerHTML="player 1 is the winner";
+            }
+            else if(a<b){
+                document.getElementById("result").innerHTML="player 2 is the winner";
+            }
+            else 
+            {
+                document.getElementById("result").innerHTML="Both are equal";
+            }
+        }
+    }
+</script>
+</body>
+</html>
