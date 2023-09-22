@@ -8,7 +8,8 @@ function Paper()
 }
 function Rock()
 {
-    var a= Selection.random*("Scissors","paper","rock");
+    Array arr=[Scissor,Paper,Rock];
+    var a= random*arr;
     a=parseInt(a);
     document.getElementById("result").values =a;
     display();
