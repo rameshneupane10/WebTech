@@ -1,0 +1,32 @@
+<!-- wap to display the multiple up to 20 of any user input number -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple of 20</title>
+</head>
+<body>
+    <label>Enter the Number:</label><input type="text" id="box1">
+   <input type="button" id="button" value="product" onclick="product()">
+
+   <p id="multiple"></p>
+
+</body>
+<script>
+    function product()
+    {
+        var a =document.getElementById("box1").value;
+        a=parseInt(a);
+        var display=" ";
+        for (let i=1;i<=20;i++)
+        {
+            var result = a  * i;
+            display+= a +" * "+ i +"="+result+"<br>";
+            document.getElementById("multiple").innerHTML=display;
+        
+        }
+        
+    }
+</script>
+</html>
