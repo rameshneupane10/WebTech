@@ -1,6 +1,6 @@
-body{
-    text-align: center;
-    background-color: aqua; 
+marquee
+{
+    background-color: lightgoldenrodyellow;
 }
 #Scissor,#Paper,#Rock
 {
@@ -19,3 +19,20 @@ h1{
         background-color :bisque;
         text-align: center;
 }
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 20; 
+    padding-top: 20px;
+  } 
+  .player{
+    left: 0;
+    text-align: center;
+    background-color: aqua;   
+}
+ .opponent{
+    right: 0;
+    text-align: center;
+    background-color: rgb(236, 113, 113);   
+} 

@@ -7,6 +7,7 @@ function Scissor() {
     if(pick==a)
     {
         document.getElementById("winner").innerHTML = "DRAW";
+        
     }
     else if(a==1)
     {
