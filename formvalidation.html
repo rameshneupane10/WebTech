@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <label>Username: </label><input type="text" id="uname">
+    <br>
+    <br>
+    <label>Password: </label><input type="password" id="pass">
+    <br>
+    <br>
+   <input type="button" value="Login" onclick="Validate()">
+    
+</body>
+
+<script>
+    function Validate()
+    {
+        var name = document.getElementById("uname");
+        var password = document.getElementById("pass");
+        if(name.value.length<6)
+        {
+            alert("Enter your Full name");
+            return false;
+        } 
+        else if(password.value.length<6)
+        {
+                alert("password is too short");
+               password.value="";
+                password.style.border = "solid 2px red";
+                return false;      
+        } 
+        else{
+            return true;
+        }    
+    }
+           
+</script>
+</html>
