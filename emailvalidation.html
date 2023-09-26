@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+       <label>Email: </label> <input type="email" name="f1" id=""><br><br>
+       <input type="button" value="Enter" onclick="ValidateEmail()">
+</body>
+<script>
+function ValidateEmail(input) {
+
+    var regExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+    var email= document.getElementById("f1").Value;
+    if(regExp.test(email))
+    {
+        alert("valid email");
+    }
+   else{
+    alert("Input valid email");
+   }
+  
+    }
+  
+  </script>
+</html>
+
+  
+  
